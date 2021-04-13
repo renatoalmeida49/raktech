@@ -38,12 +38,12 @@ export default {
 }
 
 .main {
-  min-height: calc(100vh - 321px - 38px);
+  min-height: calc(100vh - 323px - 38px);
 }
 
 @media (min-width: 640px) {
   .main {
-    min-height: calc(100vh - 140px - 38px);
+    min-height: calc(100vh - 145px - 38px);
   }
 }
 

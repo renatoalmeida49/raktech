@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="time">
+      <div class="time" id="katia">
         <div class="time-foto"><img src="@/assets/team/katia-linux.png" /></div>
         <div class="time-content">
           <div class="time-nome">Kátia Lins</div>
@@ -133,8 +133,19 @@
 }
 
 @media (min-width: 930px) {
-  .equipe {
+  .time {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 793px;
+  }
+
+  .time-descricao {
+    max-width: 600px;
+  }
+
+  #katia .time-foto {
+    order: 2;
   }
 }
 </style>

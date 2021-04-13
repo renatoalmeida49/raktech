@@ -29,11 +29,11 @@
         </div>
 
         <div class="links-mobile" :class="{flex: toogle}">
-          <div>
+          <div @click="toogleMenu">
             <router-link to="/">Home</router-link>
             <router-link to="/sobre">Sobre nós</router-link>
           </div>
-          <div>
+          <div @click="toogleMenu">
             <router-link to="/manutencao">Manutenção</router-link>
             <router-link to="/redes">Redes</router-link>
             <router-link to="/web">Web</router-link>
@@ -76,7 +76,7 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #fff;
+  color: #999;
   text-decoration: none;
   margin: 10px 6px;
   font-size: 2rem;
@@ -84,12 +84,13 @@ export default {
 
 #nav a:hover,
 #nav a:active {
-  color: #09606b;
+  color: #fcfcfc;
   transform: scale(1.05);
 }
 
 #nav a.router-link-exact-active {
-  color: #0522ff;
+  transform: scale(1.05);
+  color: #fff;
 }
 
 /* Fundo para quando o mobile é exibido */
