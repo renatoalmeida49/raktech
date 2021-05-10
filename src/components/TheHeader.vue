@@ -4,7 +4,7 @@
 
         <div class="logo">
           <router-link to="/">
-            <img src="@/assets/logo/logoSquare.png" height="40px"/>
+            <img src="@/assets/logo/logo-vertical.svg" height="40px"/>
           </router-link>
         </div>
 

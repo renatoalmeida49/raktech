@@ -4,7 +4,7 @@
         <img src="@/assets/images/hardware.jpg"/>
             
         <div class="text-logo">
-            <img src="@/assets/logo/logoLine.png" />
+            <img src="@/assets/logo/logo-horizontal.svg" />
         </div>
 
         <h1 class="text-title">Manutenção</h1>
@@ -18,7 +18,7 @@
         <img src="@/assets/images/network.jpg"/>
 
         <div class="text-logo">
-            <img src="@/assets/logo/logoLine.png" />
+            <img src="@/assets/logo/logo-horizontal.svg" />
         </div>
 
         <h1 class="text-title">Serviços de rede</h1>
@@ -32,7 +32,7 @@
         <img src="@/assets/images/webDevelopment.jpg"/>
             
         <div class="text-logo">
-            <img src="@/assets/logo/logoLine.png" />
+            <img src="@/assets/logo/logo-horizontal.svg" />
         </div>
 
         <h1 class="text-title">Desenvolvimento Web</h1>
