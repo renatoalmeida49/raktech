@@ -1,34 +1,34 @@
 <template>
-<div class="more-info">
-    <div class="title">Saiba mais sobre nossos serviços</div>
+<section class="more-info">
+    <h1 class="title">Saiba mais sobre nossos serviços</h1>
 
     <div class="links">
         <router-link to="/manutencao">
-            <div class="link">
+            <article class="link">
                 <div class="link-image">
                     <img src="@/assets/images/hardware.jpg" />
                 </div>
-                <div class="link-title">Manuteção</div>
-            </div>
+                <h2 class="link-title">Manuteção</h2>
+            </article>
         </router-link>
         <router-link to="/redes">
-            <div class="link">
+            <article class="link">
                 <div class="link-image">
                     <img src="@/assets/images/network.jpg" />
                 </div>
-                <div class="link-title">Redes</div>
-            </div>
+                <h2 class="link-title">Redes</h2>
+            </article>
         </router-link>
         <router-link to="/web">
-            <div class="link">
+            <article class="link">
                 <div class="link-image">
                     <img src="@/assets/images/webDevelopment.jpg" />
                 </div>
-                <div class="link-title">Web</div>
-            </div>
+                <h2 class="link-title">Web</h2>
+            </article>
         </router-link>
     </div>
-</div>
+</section>
 </template>
 
 <script>

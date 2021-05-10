@@ -8,8 +8,8 @@
 
 <script>
 
-import SlideShow from '@/components/SlideShow.vue'
-import MoreInfo from '@/components/MoreInfo.vue'
+import SlideShow from '@/components/Home/SlideShow.vue'
+import MoreInfo from '@/components/Home/MoreInfo.vue'
 
 export default {
   name: 'Home',

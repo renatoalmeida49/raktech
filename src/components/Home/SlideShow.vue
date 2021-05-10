@@ -1,47 +1,50 @@
 <template>
-  <div class="slideShow">
-      <div class="mySlides fade">
-          <img src="@/assets/images/hardware.jpg"/>
-          <div class="text">
-              <div class="text-logo">
-                <img src="@/assets/logo/logoLine.png" />
-              </div>
-              <div class="text-title">Manutenção</div>
-              <div class="text-description">
-                  Conserto de desktops, notebooks, celulares e tablets
-                </div>
-          </div>
-      </div>
+<section class="slideShow">
+    <div class="mySlides fade">
+        <img src="@/assets/images/hardware.jpg"/>
+            
+        <div class="text-logo">
+            <img src="@/assets/logo/logoLine.png" />
+        </div>
 
-      <div class="mySlides fade">
-          <img src="@/assets/images/network.jpg"/>
-          <div class="text">
-              <div class="text-logo">
-                <img src="@/assets/logo/logoLine.png" />
-              </div>
-              <div class="text-title">Serviços de rede</div>
-              <div class="text-description">
-                  Configuração de equipamentos, passagem de cabos, reestruturação
-              </div>
-          </div>
-      </div>
+        <h1 class="text-title">Manutenção</h1>
 
-      <div class="mySlides fade">
-          <img src="@/assets/images/webDevelopment.jpg"/>
-          <div class="text">
-              <div class="text-logo">
-                <img src="@/assets/logo/logoLine.png" />
-              </div>
-              <div class="text-title">Desenvolvimento Web</div>
-              <div class="text-description">
-                  Criação de sites e sistemas WEB
-              </div>
-          </div>
-      </div>
+        <p class="text-description">
+            Conserto de desktops, notebooks, celulares e tablets
+        </p>
+    </div>
 
-      <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next" @click="plusSlides(1)">&#10095;</a>
-  </div>
+    <div class="mySlides fade">    
+        <img src="@/assets/images/network.jpg"/>
+
+        <div class="text-logo">
+            <img src="@/assets/logo/logoLine.png" />
+        </div>
+
+        <h1 class="text-title">Serviços de rede</h1>
+
+        <p class="text-description">
+            Configuração de equipamentos, passagem de cabos, reestruturação
+        </p>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="@/assets/images/webDevelopment.jpg"/>
+            
+        <div class="text-logo">
+            <img src="@/assets/logo/logoLine.png" />
+        </div>
+
+        <h1 class="text-title">Desenvolvimento Web</h1>
+
+        <p class="text-description">
+            Criação de sites e sistemas WEB
+        </p>
+    </div>
+
+    <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+    <a class="next" @click="plusSlides(1)">&#10095;</a>
+</section>
 </template>
 
 <script>
@@ -106,7 +109,7 @@ export default {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: 0.6s ease;
     border-radius: 10px;
     user-select: none;
@@ -122,6 +125,8 @@ export default {
 
 .text-logo img {
     width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .text-title {
