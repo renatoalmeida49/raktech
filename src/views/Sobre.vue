@@ -7,64 +7,60 @@
       <p>Nada de termos difíceis ou entrelinhas nos contratos. Todo o problema pode ser resolvido de forma simples e transparente.</p>
     </div>
     
-    <div class="equipe">
-    
-      <div class="time">
-        <div class="time-foto"><img src="@/assets/team/anderson.jpg" /></div>
-        <div class="time-content">
-          <div class="time-nome">Anderson Azevedo</div>
-          <div class="time-descricao">Mestre do hardware, domina tudo referente a manutenção de desktops. Perito em redes, não há serviço que não possa ser feito.</div>
-          <div class="time-social-media">
-            <a href="https://www.facebook.com/BobyAzevedo" target="blank">
-              <img src="@/assets/icons/facebook.png"/>
-            </a>
-            <a href="#" target="blank"><img src="@/assets/icons/github.png"/></a>
-            <a href="https://www.instagram.com/bobyazevedo/" target="blank"><img src="@/assets/icons/instagram.png"/></a>
-            <a href="https://www.linkedin.com/in/anderson-azevedo-002775103/" target="blank">
-              <img src="@/assets/icons/linkedin.png"/>
-            </a>
-          </div>
-        </div>
-      </div>
+    <Equipe :membros="equipe"/>
 
-      <div class="time" id="katia">
-        <div class="time-foto"><img src="@/assets/team/katia-linux.png" /></div>
-        <div class="time-content">
-          <div class="time-nome">Kátia Lins</div>
-          <div class="time-descricao">Servidores e ambientes de rede, desenvolvimento de software e banco de dados. Está em constante evolução e capacitação.</div>
-          <div class="time-social-media">
-            <a href="#" target="blank"><img src="@/assets/icons/facebook.png"/></a>
-            <a href="#" target="blank"><img src="@/assets/icons/github.png"/></a>
-            <a href="#" target="blank"><img src="@/assets/icons/instagram.png"/></a>
-            <a href="#" target="blank"><img src="@/assets/icons/linkedin.png"/></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="time">
-        <div class="time-foto"><img src="@/assets/team/renato.jpg" /></div>
-        <div class="time-content">
-          <div class="time-nome">Renato Novaes</div>
-          <div class="time-descricao">Começou como estagiário e agora atua ativamente no time. Atua em todas as áreas. Sabe um pouco de tudo.</div>
-          <div class="time-social-media">
-            <a href="https://www.facebook.com/renatonovaes49" target="blank">
-              <img src="@/assets/icons/facebook.png"/>
-            </a>
-            <a href="https://github.com/renatoalmeida49" target="blank">
-              <img src="@/assets/icons/github.png"/>
-            </a>
-            <a href="https://instagram.com/novaes_r" target="blank">
-              <img src="@/assets/icons/instagram.png"/>
-            </a>
-            <a href="https://www.linkedin.com/in/renatonovaes49/" target="blank">
-              <img src="@/assets/icons/linkedin.png"/>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
+
+<script>
+import Equipe from "@/components/Sobre/Equipe.vue"
+
+export default {
+  name: "Sobre",
+  components: {
+    Equipe
+  },
+  data() {
+    return {
+      equipe: [
+        {
+          img: require("@/assets/team/anderson.jpg"),
+          nome: "Anderson Azevedo",
+          descricao: "Mestre do hardware, domina tudo referente a manutenção de desktops. Perito em redes, não há serviço que não possa ser feito.",
+          links: {
+            facebook: "https://www.facebook.com/BobyAzevedo",
+            github: "#",
+            instagram: "https://www.instagram.com/bobyazevedo/",
+            linkedin: "https://www.linkedin.com/in/anderson-azevedo-002775103/"
+          }
+        },
+        {
+          img: require('@/assets/team/katia-linux.png'),
+          nome: "Kátia Lins",
+          descricao: "Servidores e ambientes de rede, desenvolvimento de software e banco de dados. Está em constante evolução e capacitação.",
+          links: {
+            facebook: "#",
+            github: "#",
+            instagram: "#",
+            linkedin: "#"
+          }
+        },
+        {
+          img: require("@/assets/team/renato.jpg"),
+          nome: "Renato Novaes",
+          descricao: "Começou como estagiário e agora atua ativamente no time. Atua em todas as áreas. Sabe um pouco de tudo.",
+          links: {
+            facebook: "https://www.facebook.com/renatonovaes49",
+            github: "https://github.com/renatoalmeida49",
+            instagram: "https://instagram.com/novaes_r",
+            linkedin: "https://www.linkedin.com/in/renatonovaes49/"
+          }
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
 .titulo {
@@ -77,75 +73,5 @@
   line-height: 140%;
   margin: 1.5rem 0.5rem;
   padding: 1rem;
-}
-
-.equipe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.time {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin: 1rem 1rem;
-  padding: 1rem;
-
-  background: #fff;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-  border-radius: 10px;
-
-  width: 80%;
-  min-height: 473px;
-}
-
-.time-foto {
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 1rem 0;
-}
-
-.time-foto img {
-  height: 100%;
-}
-
-.time-nome {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0.8rem 0;
-}
-
-.time-descricao {
-  margin: 0.8rem 0;
-}
-
-.time-social-media img {
-  height: 1.5rem;
-  margin: 1rem 1rem;
-}
-
-@media (min-width: 930px) {
-  .time {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-    max-width: 793px;
-  }
-
-  .time-descricao {
-    max-width: 600px;
-  }
-
-  #katia .time-foto {
-    order: 2;
-  }
 }
 </style>
